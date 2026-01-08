@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    font-family: Arial, sans-serif;
+    background-color: #140a1f;
+    color: #333;
+    width:100vw;
+    height:100vh;
+    display: flex;
+}
+.sidebar{
+    width: 300px;
+    height: 100%;
+    background-color: #0e0e10;
+    
+}
+#heading{
+    text-align: center;
+    color: rgb(239, 35, 168);
+    
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+    width: 300px;
+    height: 562px;
+    border: 1px solid gray;
+    
+}
+.btn{
+    width: 200px;
+    height: 50px;
+    border: none;
+    margin-top: 10px;
+    background-color: transparent;
+    font-weight: bold;
+    color: white;
+    margin-right: 100px;
+    margin-bottom: 3px;
+}
+.logout{
+    position:absolute;
+    background-color: rgb(61, 50, 50);
+    bottom: 0%;
+    color: white;
+    width: 300px;
+    height: 90px;
+    text-align: left;
+    
+}
+.logout-content{
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    gap: 2px;
+    margin-left: 8px;
+    margin-top: 2px;
+}
+.logout-content button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-weight: bold;
+    height: 4px;
+    font-size: 15px;
+}
+.logout-content h3{
+    font-size: 15px;
+    margin-left: 13px;
+}
+.logout-content p{
+    font-size: 15px;
+    margin-left: 13px;
+}
+
+.logout-btn{
+    margin-top: 5px;
+    width: 250px;
+    height: 30px;
+    border: 1px solid rgb(122, 112, 112);
+    background-color: transparent;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+    margin-bottom: ;
+}
+
+.main-content{
+    width: 80%;
+    height: 90%;
+    /* background-color: yellowgreen; */
+}
+
+.head{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content{
+    width: 40%;
+    /* height: 100%; */
+    margin-left: 25px ;
+}
+span{
+    color: rgb(255, 24, 190);
+}
+.course-btn{
+    margin-right: 25px;
+    /* width: 50%; */
+    
+}
+.course-btn button{
+    width: 120px;
+    height: 40px;
+    background-color: rgb(245, 241, 241);
+    border: none;
+    border-radius: 5px;
+    color: rgb(13, 13, 13);
+    font-weight: bold;
+}
+
+.cards{
+    display: flex;
+    gap: 20px;
+    margin: 25px;
+    justify-content: space-around;
+    margin: 30px;
+    background-color: transparent;
+    color: white;
+}
+.card{
+    width: 350px;
+    height: 150px;
+    background-color: rgb(61, 50, 50);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.per{
+    color: rgb(87, 164, 19);
+}
+.margin{
+    margin-left: 25px;
+}
+.margin h3{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.detail-page{
+    width: 90%;
+    height: auto;
+    background-color: rgb(20, 20, 20);
+    margin: 60px;
+    display: flex;
+    color: white;
+    border-radius: 5px;
+}
+.course{
+    width: 60%;
+    height: 50%;
+    margin: 20px;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+.cd{
+    margin: 13px;
+}
+
+.image-section{
+    width: 40%;
+    height: 200px;
+    background-color: rgb(18, 18, 17);
+    margin: 20px;
+    margin-top: 10px ;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-right: 10px;
+    flex-direction: column;
+}
+
+.image-section img{
+    width: 90%;
+    height: 100px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+.cd2{
+    margin-left: 13px;
+}
+#btn1{
+    margin-top: 10px;
+    width: 110px;
+    height: 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    border: none;
+}
+
+.cd3{
+    margin-left: 13px;
+    justify-content: center;
+    align-items: center;
+}
+
+#video{
+    width: 40px;
+    height: 40px;
+    border: 50%;
+    align-items: center;
+    justify-content: center;
+}
