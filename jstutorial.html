@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        #main {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            min-height: 100%;
+            background-color: rgb(29, 28, 28);
+            color: wheat;
+            gap: 30px;
+        }
+
+        /* input{
+            display: none;
+        } */
+        #btn {
+            padding: 12px;
+            background-color: rgb(16, 74, 74);
+            color: white;
+            font-weight: 600;
+            border-radius: 5px;
+        }
+
+        input {
+            display: block;
+        }
+
+        .card {
+            width: 300px;
+            padding: 20px;
+            border: 2px solid greenyellow;
+            border-radius: 10px;
+            position: relative;
+            background-color: #222;
+            color: white;
+            min-height: 220px;
+        }
+
+        .profile-pic {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            overflow: hidden;
+
+        }
+        .profile-pic img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .content {
+            margin-top: 80px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <h1 class="abcd">hey how are you</h1>
+    <h1 class="abcd">hey how are you</h1>
+    <h1 class="abcd">hey how are you</h1>-->
+    <!-- <h1>changing the css through js</h1>
+    <a href="https://www.google.com ">download now</a> 
+    <img src="" alt="broken image" height="50%" width="50% ">
+    <input type="text" placeholder="enter name"> -->
+
+    <!-- <h3 id="device">Select your device</h3>
+    <select name="" id="">
+
+        <option selected disabled>Select your device</option>
+        <option value="Samsung">Samsung</option>
+        <option value="mi">xiomi</option>
+        <option value="apple">apple</option>
+        <option value="oppo">oppo</option>
+    </select> -->
+
+
+    <!-- <div id="main">
+        <input type="file" id="filei">
+        <div id="btn">Upload file</div>
+
+    </div> -->
+
+    <div id="main">
+
+        <form action="">
+
+            <input type="text" placeholder="profile pic">
+            <input type="text" placeholder="name">
+            <!-- <input type="text" placeholder="age"> -->
+            <input type="text" placeholder="email">
+            <input type="submit">
+        </form>
+
+    </div>
+        <!-- <div class="card">
+            <div class="profile-pic">
+                <img src="https://images.unsplash.com/photo-1778546979309-174a843af853?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+            <div class="content">
+                <h3>Aman Raushan</h3>
+                <p>Age: 22</p>
+                <p>Email: aman@gmail.com</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div> -->
+
+
+
+        </div>
+    <script src="jstutorial.js"></script>
+</body>
+
+</html>

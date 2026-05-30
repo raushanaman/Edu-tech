@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
+    body {
+        background-color: rgb(26, 19, 19);
+        color: white;
+    }
+    .main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container {
+        width: 30%;
+        height: 200px;
+        border: 2px solid yellow;
+        margin: 250px;
+        padding: 10px;
+        background-color: bisque;
+        color: brown;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #item-list {
+        margin-top: 10px;
+    }
+
+    #msg {
+        display: none;
+        color: red;
+    }
+</style>
+
+<body>
+    <div class="main">
+
+        <div class="container">
+
+            <input type="text" id="search-input" placeholder="Search here...">
+            <div id="item-list">
+                <div class="item">Apple</div>
+                <div class="item">banana</div>
+                <div class="item">grapes</div>
+                <div class="item">carrot</div>
+                <div class="item">gauava</div>
+                <p id="msg">no items present</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="searchFilter.js"></script>
+</body>
+
+</html>
