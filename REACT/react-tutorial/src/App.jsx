@@ -19,14 +19,23 @@ export default function App() {
 
         const addTask = (task)=>{
             if(task.trim()==="")return;
-            setTodos([task, ...todos]);
-
-
+            setTodos([{text: task, done: false}, ...todos]);
         }
 
         const deleteTask = (indexToDelete)=>{
-            const updateTodo = todos.filter((_,index)=> index !==indexToDelete);
-            setTodos(updateTodo);
+            setTodos(todos.filter((_,index)=> index !==indexToDelete));
+        }
+
+        const editTask = (indexToEdit, newText)=>{
+            setTodos(todos.map((todo, index)=>
+                index === indexToEdit ? {...todo, text: newText} : todo
+            ));
+        }
+
+        const toggleDone = (indexToToggle)=>{
+            setTodos(todos.map((todo, index)=>
+                index === indexToToggle ? {...todo, done: !todo.done} : todo
+            ));
         }
     return (
         <section className="container">
@@ -41,7 +50,7 @@ export default function App() {
             <Display name={name}/> */}
             {/* <ToggleSwitch /> */}
             <TodoForm addTask = {addTask}/>
-            <TodoList todos = {todos} deleteTask={deleteTask}/>
+            <TodoList todos={todos} deleteTask={deleteTask} editTask={editTask} toggleDone={toggleDone}/>
         </section>
     );
 }

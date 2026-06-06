@@ -67,12 +67,46 @@ li {
 }
 
 li button {
-    background-color: #ff4d4d;
-    padding: 6px 12px;
-    font-size: 13px;
-    margin-left: 10px;
+    padding: 6px 10px;
+    font-size: 14px;
+    margin-left: 6px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.2s;
 }
 
-li button:hover {
-    background-color: #e03333;
+.done-btn:hover { background-color: #d4edda; }
+.edit-btn:hover { background-color: #fff3cd; }
+.delete-btn:hover { background-color: #f8d7da; }
+
+.btn-group {
+    display: flex;
+    gap: 4px;
+}
+
+li.done span {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.edit-input {
+    width: 65%;
+    padding: 6px 10px;
+    border: 2px solid #6c63ff;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+}
+
+.save-btn {
+    background-color: #28a745;
+    padding: 6px 12px;
+    font-size: 14px;
+    margin-left: 8px;
+}
+
+.save-btn:hover {
+    background-color: #218838;
 }
