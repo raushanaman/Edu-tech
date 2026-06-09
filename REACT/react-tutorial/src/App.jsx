@@ -8,6 +8,7 @@
 // import { Display } from "./Components/hooks/Display";
 // import { TodoForm } from "./Projects/TodoForm";
 // import { TodoList } from "./Projects/TodoList";
+import { Counter } from "./Projects/Challenge";
 // import "./Projects/Todo.css";
 
 import { Clock } from "./Projects/DigitalClock";
@@ -53,7 +54,8 @@ export default function App() {
             {/* <ToggleSwitch /> */}
             {/* <TodoForm addTask = {addTask}/>
             <TodoList todos={todos} deleteTask={deleteTask} editTask={editTask} toggleDone={toggleDone}/> */}
-            <Clock />
+            {/* <Clock /> */}
+            <Counter />
         </section>
     );
 }
