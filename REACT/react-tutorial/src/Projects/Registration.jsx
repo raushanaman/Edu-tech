@@ -1,47 +1,29 @@
 import { useState } from "react";
 
 
-export const RegistrationForm = ()=>{
-    const [firstName, setFirstName] = useState("");
-    const [lastName, setlastName] = useState("");
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-    const [phoneNumber, setPhoneNumber] = useState("");
+export const Registration = ()=>{
+    const [user, setUser] = useState({
 
+        firstName:"",
+        lastName:"",
+        email:"",
+        password:"",
+        phoneNumber:""
+
+    });
     const handleInputChange = (e)=>{
         const {name,value}= e.target;
 
-        switch(name){
-            case "firstName":
-                setFirstName(value);
-                break;
-            case "lastName":
-                setlastName(value);
-                break;
-            case "email":
-                setEmail(value);
-                break;
-            case "password":
-                setPassword(value);
-                break;
-            case "phone":
-                setPhoneNumber(value);
-                break;
+        setUser((prev)=>({...prev, [name]:value}));
         }
-    };
+    
 
     const handleFormSubmit = (e)=>{
         e.preventDefault();
 
-        const formData = {
-            firstName,
-            lastName,
-            email,
-            password,
-            phoneNumber
-        }
+        
 
-        console.log(formData);
+        console.log(user);
         
     }
     return(
@@ -58,7 +40,7 @@ export const RegistrationForm = ()=>{
                 name="firstName"
                 placeholder="Enter firstName"
                 required
-                value={firstName}
+                value={user.firstName}
                 onChange= {handleInputChange}
                className="w-full border border-gray-300 rounded px-3 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"/>
 
@@ -70,7 +52,7 @@ export const RegistrationForm = ()=>{
                 name="lastName" 
                 placeholder="Enter lastName" 
                 required
-                value={lastName}
+                value={user.lastName}
                 onChange= {handleInputChange}
                className="w-full border border-gray-300 rounded px-3 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500" />
 
@@ -82,7 +64,7 @@ export const RegistrationForm = ()=>{
                 name="email"
                 placeholder="Enter Email"
                 required
-                value={email}
+                value={user.email}
                 onChange= {handleInputChange}
                className="w-full border border-gray-300 rounded px-3 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500" />
 
@@ -94,7 +76,7 @@ export const RegistrationForm = ()=>{
                 placeholder="Enter Password"
                 name="password"
                 required
-                 value={password}
+                 value={user.password}
                 onChange= {handleInputChange}     
                 className="w-full border border-gray-300 rounded px-3 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
@@ -102,8 +84,8 @@ export const RegistrationForm = ()=>{
                 <label htmlFor="phone" className="block font-semibold mb-1">
                     <b>Phone Number</b>
                 </label>
-                <input type="phone" name="phone" placeholder="9798876543" required
-                 value={phoneNumber}
+                <input type="phone" name="phoneNumber" placeholder="9798876543" required
+                 value={user.phoneNumber}
                  onChange= {handleInputChange}
                 className="w-full border border-gray-300 rounded px-3 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500" />
 
