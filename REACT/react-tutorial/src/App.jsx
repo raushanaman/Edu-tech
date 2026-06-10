@@ -8,7 +8,8 @@
 // import { Display } from "./Components/hooks/Display";
 // import { TodoForm } from "./Projects/TodoForm";
 // import { TodoList } from "./Projects/TodoList";
-import { Counter } from "./Projects/Challenge";
+// import { Counter } from "./Projects/Challenge";
+import { RegistrationForm } from "./Projects/Registration";
 // import "./Projects/Todo.css";
 
 import { Clock } from "./Projects/DigitalClock";
@@ -55,7 +56,8 @@ export default function App() {
             {/* <TodoForm addTask = {addTask}/>
             <TodoList todos={todos} deleteTask={deleteTask} editTask={editTask} toggleDone={toggleDone}/> */}
             {/* <Clock /> */}
-            <Counter />
+            {/* <Counter /> */}
+            <RegistrationForm />
         </section>
     );
 }
