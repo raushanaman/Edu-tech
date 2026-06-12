@@ -10,9 +10,14 @@
 // import { TodoList } from "./Projects/TodoList";
 // import { Counter } from "./Projects/Challenge";
 // import { Registration } from "./Projects/Registration";
-import { ContactForm } from "./Projects/ContactForm";
+// import { ContactForm } from "./Projects/ContactForm";
 // import { LoginForm } from "./Projects/LoginForm";
 // import "./Projects/Todo.css";
+// import { HowNotToFetchApi } from "./Components/hooks/UseEffect/HowNotToFetchApi";
+
+import { Pokemon } from "./Projects/Pokemon";
+
+// import { ReactUseEffect } from "./Components/hooks/UseEffect";
 
 // import { Clock } from "./Projects/DigitalClock";
 
@@ -61,7 +66,12 @@ export default function App() {
             {/* <Counter /> */}
             {/* <Registration /> */}
             {/* <LoginForm /> */}
-            <ContactForm />
+            {/* <ContactForm /> */}
+
+
+            {/* <ReactUseEffect/> */}
+            {/* <HowNotToFetchApi /> */}
+            <Pokemon/>
         </section>
     );
 }

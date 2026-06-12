@@ -5,8 +5,8 @@ import App from './App.jsx'
 // import {Profile} from './Components/Profile'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+  // <StrictMode>
     <App />
-    {/* <Profile/> */}
-  </StrictMode>,
+    // {/* <Profile/> */}
+  // </StrictMode>,
 )
