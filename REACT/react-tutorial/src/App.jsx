@@ -13,10 +13,12 @@
 // import { ContactForm } from "./Projects/ContactForm";
 // import { LoginForm } from "./Projects/LoginForm";
 // import "./Projects/Todo.css";
+import {ThemeProvider} from "./Components/hooks/useContextAPI/LightToggle";
+import { DarkLight } from "./Components/hooks/useContextAPI/LightToggle";
 // import { HowNotToFetchApi } from "./Components/hooks/UseEffect/HowNotToFetchApi";
 
-import { Pokemon } from "./Projects/Pokemon";
-
+// import { Pokemon } from "./Projects/Pokemon";
+// import {UseRefs} from "./Components/hooks/UseRefs/UseRefs";
 // import { ReactUseEffect } from "./Components/hooks/UseEffect";
 
 // import { Clock } from "./Projects/DigitalClock";
@@ -71,7 +73,14 @@ export default function App() {
 
             {/* <ReactUseEffect/> */}
             {/* <HowNotToFetchApi /> */}
-            <Pokemon/>
+            {/* <Pokemon/> */}
+
+            {/* <UseRefs/> */}
+
+            <ThemeProvider>
+                <DarkLight/>
+
+            </ThemeProvider>
         </section>
     );
 }
